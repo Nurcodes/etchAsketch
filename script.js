@@ -1,8 +1,10 @@
 const container = document.querySelector(".container");
 const sidebar = document.querySelector(".sidebar");
 const btn = document.createElement("button");
-// btn.textContent = "Click me";
-// sidebar.insertAdjacentElement("beforeend", btn);
+const slider = document.querySelector(".range");
+const value = document.querySelector("label");
+value.innerText = slider.value;
+
 const hex = ["a", "b", "c", "d", "e", "f", 1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 function makeGrid(size) {
