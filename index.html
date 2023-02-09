@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Etch A Sketch</title>
 
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -15,11 +16,12 @@
         <div class="wheel-container">
           <input type="color" class="wheel" />
         </div>
-        <button class="btn start">Click me</button>
+        <button class="btn start active">Color</button>
+        <button class="btn rainbow">rainbow</button>
         <button class="btn eraser">Eraser</button>
-        <button class="btn start">clear</button>
+        <button class="btn clear">clear</button>
         <div class="range-container">
-          <input type="range" class="range" min="4" max="64" />
+          <input type="range" id="range" min="0" max="64" value="16" />
           <label for="range"></label>
         </div>
       </div>
@@ -27,7 +29,10 @@
     </div>
 
     <footer>
-      <h2>copyright &copy; Nurcodes <span id="date">2000</span></h2>
+      <h2>
+        copyright &copy; <a href="https://github.com/Nurcodes">Nurcodes</a>
+        <span id="date">2000</span>
+      </h2>
     </footer>
 
     <script src="script.js"></script>

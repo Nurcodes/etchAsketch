@@ -1,24 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;800&family=Rock+Salt&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* 
-
-
-
-  
-*/
 body {
   height: 100vh;
-  /* color: #fff; */
   display: grid;
   place-items: center;
   gap: 20px;
-  font-family: "minecraft";
+  font-family: "Orbitron";
   background-color: #ededed;
-  /* padding: 20px; */
 }
 
 .wrapper {
@@ -33,7 +27,7 @@ body {
 }
 
 h1 {
-  margin-block: 20px;
+  margin-block: 10px;
 }
 .container {
   display: grid;
@@ -42,17 +36,13 @@ h1 {
   /* gap: 3px; */
   width: 300px;
   height: 300px;
-  background-color: whitesmoke;
+  background-color: white;
   box-shadow: 1px 15px 10px rgba(0, 0, 0, 0.4);
+  transition: all 0.5s linear;
 
   /* gap: 5px; */
 }
 
-.cell {
-  /* background-color: rgba(0, 0, 0, 0.1); */
-  transition: background 0.1s ease;
-  /* height: 10px; */
-}
 .sidebar {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -116,11 +106,12 @@ h1 {
 
 @media screen and (min-width: 900px) {
   .container {
-    height: 500px;
+    height: 450px;
     width: 500px;
   }
   .wrapper {
     justify-content: space-between;
+    margin-bottom: 20px;
   }
 }
 
@@ -134,7 +125,7 @@ h1 {
   font-size: 0.9rem;
   /* border: none; */
   border-radius: 3px;
-  font-family: "minecraft";
+  font-family: "Oribitron";
   text-transform: capitalize;
   transition: all 0.2s linear;
   letter-spacing: 1.3px;
@@ -143,19 +134,24 @@ h1 {
 .btn:hover {
   transform: scale(1.04);
 }
-.btn:hover {
+.active {
   background-color: #222;
   color: whitesmoke;
 }
 
 footer {
   background-color: #222;
-  height: 80px;
+  height: 10vh;
   color: whitesmoke;
   display: grid;
   place-items: center;
   width: 100%;
   text-transform: capitalize;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.75rem;
 }
 
 .range-container {
@@ -166,7 +162,7 @@ footer {
   gap: 10px;
   grid-column: 1/3;
 }
-.range {
+#range {
   /* width: 100%; */
   flex-grow: 1;
   height: 50px;
